@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Simple Meet Joiner",
+  "version": "1.0",
+  "description": "Automatically join Google Meet at scheduled time",
+  "permissions": [
+    "storage",
+    "tabs",
+    "alarms",
+    "scripting"  // Added this permission
+  ],
+  "host_permissions": [
+    "https://meet.google.com/*"  // Added this permission
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

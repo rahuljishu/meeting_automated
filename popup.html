@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Meet Joiner</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    .form-group {
+      margin: 10px 0;
+    }
+    input {
+      width: 100%;
+      margin: 5px 0;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #4285f4;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .meeting {
+      border-bottom: 1px solid #ccc;
+      padding: 8px 0;
+    }
+  </style>
+</head>
+<body>
+  <h2>Schedule Meeting</h2>
+  <div class="form-group">
+    <input type="text" id="meetLink" placeholder="Meet Link (https://meet.google.com/...)">
+    <input type="date" id="meetDate">
+    <input type="time" id="meetTime">
+    <button id="schedule">Schedule Meeting</button>
+  </div>
+  <div id="meetings">
+    <h3>Scheduled Meetings</h3>
+    <div id="meetingsList"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
